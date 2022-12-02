@@ -8,34 +8,12 @@ import {
   View,
   Platform,
 } from "react-native";
+import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
+import ViewImageScreen from "./app/screens/ViewImageScreen";
+import WelcomeScreen from "./app/screens/WelcomeScreen";
 
 export default function App() {
-  return (
-    <SafeAreaView style={styles.container}>
-      <Text>Hello React!!!</Text>
-      <Button
-        title="Click Me"
-        onPress={() => {
-          Alert.alert("My Title", "My Message", [
-            {
-              text: "Yes",
-              onPress: () => {
-                console.log("Yes");
-              },
-            },
-          ]);
-        }}
-      />
-    </SafeAreaView>
-  );
+  return <ListingDetailsScreen />;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-  },
-});
+const styles = StyleSheet.create({});
