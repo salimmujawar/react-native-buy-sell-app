@@ -1,13 +1,13 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import colors from "../config/colors";
+import defaultStyles from "../config/styles";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 function Icon({
   name,
   size = 40,
-  backgroundColor = colors.black,
-  iconColor = colors.white,
+  backgroundColor = defaultStyles.colors.black,
+  iconColor = defaultStyles.colors.white,
 }) {
   return (
     <View

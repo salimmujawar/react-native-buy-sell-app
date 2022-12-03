@@ -5,21 +5,21 @@ import Icon from "../components/Icon";
 import ListItem from "../components/ListItem";
 import ListItemSeperator from "../components/ListItemSeperator";
 import Screen from "../components/Screen";
-import colors from "../config/colors";
+import defaultStyles from "../config/styles";
 
 const menuItems = [
   {
     title: "My Listings",
     icon: {
       name: "format-list-bulleted",
-      backgroundColor: colors.primary,
+      backgroundColor: defaultStyles.colors.primary,
     },
   },
   {
     title: "My Messages",
     icon: {
       name: "email",
-      backgroundColor: colors.secondary,
+      backgroundColor: defaultStyles.colors.secondary,
     },
   },
 ];
@@ -63,7 +63,7 @@ function AccountScreen(props) {
 
 const styles = StyleSheet.create({
   screen: {
-    backgroundColor: colors.light,
+    backgroundColor: defaultStyles.colors.light,
   },
   container: {
     marginVertical: 20,
